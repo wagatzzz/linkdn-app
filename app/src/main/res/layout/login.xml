@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+    <!--  Title TextView  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinkdN"
+        android:textSize="24sp"/>
+    <!--  Email Input Field  -->
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:paddingStart="5dp"
+        android:id="@+id/emailEditText"
+        android:background="@drawable/input_border"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:paddingStart="5dp"
+        android:id="@+id/passwordEditText"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/input_border"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"/>
+    <CheckBox
+        android:id="@+id/showPasswordCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+    <!--  Login Button  -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:text="Login"
+        android:background="@drawable/blue_background_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+    <!--  "Don't have an account" Text and Sign-up Link  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:textColor="#840B91"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:text="Sign up"/>
+    </LinearLayout>
+</LinearLayout>
